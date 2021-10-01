@@ -5,7 +5,7 @@
  * 
  * @author Michael Kölling and David Barnes
  * @modified by Maryam Hanif 
- * @version v1.0
+ * @version v1.0 01/10/2021
  */
 public class Student
 {
@@ -41,6 +41,10 @@ public class Student
         return id;
     }
 
+    
+    /** 
+     * Enrol the student on the course.
+     */
     public void enrol(Course course)
     {
         this.course = course;
@@ -54,6 +58,9 @@ public class Student
         System.out.println(" Student ID: " + id + " Name: " + name);
     }
     
+    /**
+     * Print the course.
+     */
     public void printCourse()
     {
         course.print();

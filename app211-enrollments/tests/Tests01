@@ -1,0 +1,24 @@
+Student student1 = new Student("MaryamHanif", 100152552);
+Course computing = new Course("BT1CTG1", "BSc Computing");
+student1.enrol(computing);
+Course computing = new Course("BT1CTG1", "BSc Computing");
+computing.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CTG1: BSc Computing
+
+Student student1 = new Student("MaryamHanif", 100152552);
+student1.print();
+ Student ID: 100152552 Name: MaryamHanif
+student1.enrol(computing);
+student1.print();
+ Student ID: 100152552 Name: MaryamHanif
+computing.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CTG1: BSc Computing
+
