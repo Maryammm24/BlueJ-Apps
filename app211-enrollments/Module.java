@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Module here.
+ * This class models a BNU module which forms part of a course.
  *
- * @author (Maryam Hanif)
- * @version (v1 01/10/2021)
+ * @author Maryam Hanif
+ * @version 1.0 
  */
 public class Module
 {
