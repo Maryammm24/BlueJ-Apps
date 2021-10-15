@@ -21,7 +21,7 @@ public class Module
         //initialise variables 
         this.code= code;
         this.title= title;
-        credit = 0;
+        credit = 15;
     }
 
     /**
@@ -53,11 +53,10 @@ public class Module
      * of students enrolled and the module
      *
      */
-    private void print()
+    public void print()
     {
-        //printHeading();
-        
-        System.out.println(" Module Code: " + code + ": " + title);
+        System.out.println(" Module Code: " + code + ": "+ title); 
+        System.out.println("Credit" + credit);
         System.out.println();
     }
 }
