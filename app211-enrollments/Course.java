@@ -14,6 +14,8 @@ public class Course
     // The full title including qualification and subject
     private String title;
     
+    private Module module;
+    
     /**
      * Create a Course with a maximum number of enrolments. 
      * All other details are set to unkown values.
@@ -23,8 +25,12 @@ public class Course
         this.code = code;
         this.title = title;
     }
-
     
+    public void enrol(Module module)
+    {
+        this.module = module;
+    }
+
     /**
      * Print the details of the course, the list
      * of students enrolled and the module

@@ -7,27 +7,57 @@
  */
 public class Module
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // Variables 
+    private String code;
+    private String title;
+    private int credit;
 
     /**
      * Constructor for objects of class Module
      */
-    public Module()
+    //Module is a method 
+    public Module(String code, String title)
     {
-        // initialise instance variables
-        x = 0;
+        //initialise variables 
+        this.code= code;
+        this.title= title;
+        credit = 0;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * An example of a method 
+     * @param
+     * @return code
      */
-    public int sampleMethod(int y)
+    public String getCode()
     {
-        // put your code here
-        return x + y;
+        return this.code;
+    }
+    
+    public String getTitle()
+    {
+        return this.title;
+    }
+    
+    public int getCredit()
+    {
+        return this.credit;
+    }
+    
+    public void setCredit(int credit)
+    {
+       this.credit = credit; 
+    }
+    /**
+     *  Print the details of the course, the list
+     * of students enrolled and the module
+     *
+     */
+    private void print()
+    {
+        //printHeading();
+        
+        System.out.println(" Module Code: " + code + ": " + title);
+        System.out.println();
     }
 }
