@@ -21,7 +21,7 @@ public class Module
         //initialise variables 
         this.code= code;
         this.title= title;
-        credit = 15;
+        credit = 0;
     }
 
     /**
