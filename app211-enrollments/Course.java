@@ -13,7 +13,7 @@ public class Course
     private String code;
     // The full title including qualification and subject
     private String title;
-    
+
     private Module module;
     
     /**

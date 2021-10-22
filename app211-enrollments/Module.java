@@ -14,6 +14,7 @@ public class Module
 
     /**
      * Constructor for objects of class Module
+     * It also gives the credit a value of 0
      */
     //Module is a method 
     public Module(String code, String title)
@@ -25,33 +26,41 @@ public class Module
     }
 
     /**
-     * An example of a method 
-     * @param
-     * @return code
+     * This method returns the code for the module
+     * @return code that represents the module code
      */
     public String getCode()
     {
         return this.code;
     }
     
+    /** 
+     * This method returns the code for the title 
+     */
     public String getTitle()
     {
         return this.title;
     }
     
+    /**
+     * This method returns the code for the credit
+     */
     public int getCredit()
     {
         return this.credit;
     }
     
+    /**
+     * This method sets the credit value
+     */
     public void setCredit(int credit)
     {
        this.credit = credit; 
     }
+    
     /**
-     *  Print the details of the course, the list
-     * of students enrolled and the module
-     *
+     * Print the details of the module, including the code, 
+     * title and credits 
      */
     public void print()
     {

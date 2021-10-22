@@ -1,6 +1,6 @@
 /**
  * The Student class contains essential information that identifies 
- * a student at BNU.  The class also contains information 
+ * a student at BNU. The class also contains information 
  * concerning the course the student is currently enrolled on
  * 
  * @author Michael Kölling and David Barnes

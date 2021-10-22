@@ -1,0 +1,30 @@
+Course co452 = new Course("CO452", "Programming Concepts");
+Module programming = new Module("CO452", "Programming Concepts");
+programming.print();
+ Module Code: CO452: Programming Concepts
+Credit0
+
+programming.setCredit(15);
+programming.print();
+ Module Code: CO452: Programming Concepts
+Credit15
+
+co452.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: CO452: Programming Concepts
+
+    Exception occurred.
+co452.enrol(programming);
+co452.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: CO452: Programming Concepts
+
+ Module Code: CO452: Programming Concepts
+Credit15
+
