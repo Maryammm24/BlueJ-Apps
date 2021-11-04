@@ -8,6 +8,7 @@
 public class Module
 {
     // Variables 
+    private int x;
     private String code;
     private String title;
     private int credit;
@@ -42,20 +43,20 @@ public class Module
         return this.title;
     }
     
-    /**
-     * This method returns the code for the credit
+    /** 
+     * This method returns the code for the title 
      */
     public int getCredit()
     {
         return this.credit;
     }
     
-    /**
-     * This method sets the credit value
+    /** 
+     * This method returns the code for the title 
      */
     public void setCredit(int credit)
     {
-       this.credit = credit; 
+        this.credit = credit;
     }
     
     /**
@@ -64,8 +65,7 @@ public class Module
      */
     public void print()
     {
-        System.out.println(" Module Code: " + code + ": "+ title); 
-        System.out.println("Credit" + credit);
+        System.out.println(" Module Code: " + code + ": "+ "\t" + title);
         System.out.println();
     }
 }

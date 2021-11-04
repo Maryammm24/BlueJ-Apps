@@ -41,7 +41,6 @@ public class Student
         return id;
     }
 
-    
     /** 
      * Enrol the student on the course.
      */
@@ -65,4 +64,5 @@ public class Student
     {
         course.print();
     }
+    
 }

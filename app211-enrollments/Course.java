@@ -1,5 +1,3 @@
-import java.util.*;
-
 /**
  * This class contains information about an undergraduate course
  * at BNU together with a list of student who are enrolled
@@ -33,7 +31,7 @@ public class Course
     {
         this.module = module;
     }
-
+    
     /**
      * Print the details of the course, the list
      * of students enrolled and the module.
@@ -58,11 +56,4 @@ public class Course
         System.out.println();
     }
     
-    /**
-     * Add a module to the course class.
-     */
-    public void addModule(Module module)
-    {
-      this.module = module;  
-    }
 }
