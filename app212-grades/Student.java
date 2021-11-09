@@ -104,12 +104,18 @@ public class Student
         System.out.println(" Student ID: " + id + ", " + name);
     }
     
+    /**
+     * This prints the course from the student class.
+     */
     public void printCourse()
     {
         this.print();
         course.print();
     }
     
+    /**
+     * This prints the modules with the marks.
+     */
     private void printModules()
     {
         for(ModuleMark mark : marks)

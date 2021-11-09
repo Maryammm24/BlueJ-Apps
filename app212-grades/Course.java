@@ -53,6 +53,9 @@ public class Course
         addModule(co454);
     }
     
+    /**
+     * This allows the course class to add modules.
+     */
     public void addModule(Module module)
     {
         if(modules.size() < MAXN_MODULES)
@@ -62,7 +65,7 @@ public class Course
     }
     
     /**
-     * 
+     * This converts the student's mark to gardes.
      */
     public Grades convertToGrade(int mark)
     {
