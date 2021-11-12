@@ -24,12 +24,10 @@ public class Module
         this.title = title;
     }
 
-   
     public String getCode()
     {
         return code;
     }
-    
     
     public String getTitle()
     {

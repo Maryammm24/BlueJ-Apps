@@ -10,10 +10,7 @@ public class Course
 {
     public final static int MAXN_MODULES = 4;
     
-    public final static int MAXN_STUDENTS = 4;
-    
     public ArrayList<Module> modules;
-    public ArrayList<Student> students;
     
     private String code;
     private String title;
@@ -35,10 +32,8 @@ public class Course
         this.title = title;
         
         modules  = new ArrayList<Module>();
-        students = new ArrayList<Student>();
         
         createModules();
-        AddStudents();
     }
 
     /**
@@ -56,14 +51,6 @@ public class Course
         addModule(co456);
         addModule(co450);
         addModule(co454);
-    }
-    
-    public void AddStudents()
-    {
-        //Student one = new Student ("Maryam Hanif");
-        //Student two = new Student ("Mohammad");
-        
-        
     }
     
     /**
