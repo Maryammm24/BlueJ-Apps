@@ -3,9 +3,9 @@ import java.util.*;
  * The Student class represents a student in a student administration system.
  * It holds the student details relevant in our context.
  * 
- * @author Michael Kölling and David Barnes
- * Modified by Derek Peacock & Nicholas Day
- * @version 2021-08-18
+ * @author Maryam Hanif
+ * Modified by Maryam Hanif
+ * @version 1 (12/11/2021)
  */
 public class Student
 {
@@ -93,8 +93,7 @@ public class Student
     {
         return id;
     }
-
-        
+  
     /**
      * Print the student's name and ID number to the 
      * output terminal.
@@ -125,6 +124,9 @@ public class Student
         }
     }
     
+    /**
+     * This prints the Trascript with all details.
+     */
     public void printTranscript()
     {
         System.out.println(" ------------------------------------");

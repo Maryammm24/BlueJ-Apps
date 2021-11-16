@@ -3,14 +3,15 @@ import java.util.ArrayList;
  * This class stores information about a course
  * that enrolled students may want to complete
  *
- * @author Derek Peacock and Nicholas Day
- * @version 0.1 11/Sep/2020
+ * @author  Maryam Hanif
+ * @version 1 (12/11/2021)
  */
 public class Course
 {
     public final static int MAXN_MODULES = 4;
     
     public ArrayList<Module> modules;
+    public ArrayList<Student> students;
     
     private String code;
     private String title;
@@ -32,8 +33,10 @@ public class Course
         this.title = title;
         
         modules  = new ArrayList<Module>();
+        students = new ArrayList<Student>();
         
         createModules();
+        createStudents();
     }
 
     /**
@@ -62,6 +65,16 @@ public class Course
         {
             modules.add(module);
         }
+    }
+    
+    public void createStudents()
+    {
+        
+    }
+    
+    public void addStudents(Student student)
+    {
+        students.add(student);
     }
     
     /**
@@ -124,6 +137,19 @@ public class Course
         {
             module.print();
             module.printCredit();
+        }
+    }
+    
+    /**
+     * Print the student's details 
+     */
+    public void printStudents()
+    {
+        this.print();
+        System.out.println();
+        for (Student student : students)
+        {
+            student.print();
         }
     }
 }
