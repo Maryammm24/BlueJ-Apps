@@ -1,0 +1,37 @@
+Product iPhone12 = new Product(101, "iPhone 12");
+Product iPhone11 = new Product(102, "iPhone 11");
+Product airpods = new Product(103, "Airpods");
+Product airpodsPro = new Product(104, "Airpods Pro");
+Product iPadPro = new Product(105, "iPad Pro");
+Product iPadAir = new Product(106, "iPad Air");
+Product iPadMini = new Product(107, "iPad Mini");
+Product macbookPro = new Product(108, "Macbook Pro");
+Product macbookAir = new Product(109, "Macbook Air");
+Product applePencil = new Product(110, "Apple Pencil");
+StockList appleProducts = new StockList();
+appleProducts.add(iPhone12);
+appleProducts.add(iPhone11);
+appleProducts.add(airpods);
+appleProducts.add(airpodsPro);
+appleProducts.add(iPadPro);
+appleProducts.add(iPadAir);
+appleProducts.add(iPadMini);
+appleProducts.add(macbookPro);
+appleProducts.add(macbookAir);
+appleProducts.add(applePencil);
+appleProducts.print();
+
+ Maryam's Stock List
+ ====================
+
+ ID 101: iPhone 12 stock level: 0
+ ID 102: iPhone 11 stock level: 0
+ ID 103: Airpods stock level: 0
+ ID 104: Airpods Pro stock level: 0
+ ID 105: iPad Pro stock level: 0
+ ID 106: iPad Air stock level: 0
+ ID 107: iPad Mini stock level: 0
+ ID 108: Macbook Pro stock level: 0
+ ID 109: Macbook Air stock level: 0
+ ID 110: Apple Pencil stock level: 0
+
