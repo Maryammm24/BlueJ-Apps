@@ -9,7 +9,6 @@ import java.util.Random;
  */
 public class StockDemo
 {
-    // The stock manager.
     private StockList stock;
     
     private Random generator = new Random();
@@ -21,9 +20,6 @@ public class StockDemo
     public StockDemo()
     {
         this.stock = new StockList();
-        //this.random = new Random();
-        // Add at least 10 products, they must be unique to you
-        // Make sure the ids are sequential numbers
         
         stock.add(new Product(101, "iPhone 12"));
         stock.add(new Product(102, "iPhone 11"));
@@ -47,9 +43,7 @@ public class StockDemo
      * have been demonstrated.
      */
     public void runDemo()
-    {
-        // Show details of all of the products before delivery.
-        
+    {   
         stock.print();
 
         buyProducts();
@@ -59,6 +53,10 @@ public class StockDemo
         stock.print();        
     }
     
+    /**
+     * This code is to buy the products and print a certain message
+     * if the product value is 0.
+     */
     private void buyProducts()
     {
         Product product;
@@ -81,6 +79,9 @@ public class StockDemo
     }
 
 
+    /**
+     * This code sells the products 
+     */
     private void sellProducts()
     {
         Product product;
