@@ -12,28 +12,28 @@ public class StockDemo
     // The stock manager.
     private StockList stock;
     
-    private Random random;
+    private Random generator = new Random();
 
     /**
      * Create a StockManager and populate it with at least
      * 10 sample products.
      */
-    public StockDemo(StockList stock)
+    public StockDemo()
     {
         this.stock = new StockList();
-        this.random = new Random();
+        //this.random = new Random();
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
         
-        stock.add(new Product(101, "Iphone 12"));
-        stock.add(new Product(102, "Iphone 11"));
-        stock.add(new Product(103, "Airpods (2nd Generation)"));
-        stock.add(new Product(104, "Airpods Pro"));
-        stock.add(new Product(105, "Ipad Pro"));
-        stock.add(new Product(106, "Ipad Air"));
-        stock.add(new Product(107, "Ipad mini"));
-        stock.add(new Product(108, "Macbook Pro"));
-        stock.add(new Product(109, "Macbook Air"));
+        stock.add(new Product(101, "iPhone 12"));
+        stock.add(new Product(102, "iPhone 11"));
+        stock.add(new Product(103, "AirPods (2nd Generation)"));
+        stock.add(new Product(104, "AirPods Pro"));
+        stock.add(new Product(105, "iPad Pro"));
+        stock.add(new Product(106, "iPad Air"));
+        stock.add(new Product(107, "iPad Mini"));
+        stock.add(new Product(108, "MacBook Pro"));
+        stock.add(new Product(109, "MacBook Air"));
         stock.add(new Product(110, "Apple Pencil (1st Gen)"));
         
         runDemo();
@@ -61,17 +61,45 @@ public class StockDemo
     
     private void buyProducts()
     {
-        for (int i = 101; i <= 110; i++)
+        Product product;
+        int quantity = 1;
+        
+        for(int id = 101; id <= 110; id++)
         {
-           stock.buyProduct(i, random.nextInt(1001)); 
+            product = stock.findProduct(id);
+            
+            if(product == null)
+            {
+                System.out.println("Product " + id + " Not found");
+            }
+            else
+            {
+               quantity = generator.nextInt(20);
+               stock.buyProduct(id, quantity);
+            }
         }
     }
 
+
     private void sellProducts()
     {
-        for (int i = 101; i <= 110; i++)
+        Product product;
+        int quantity = 1;
+        
+        for(int id = 101; id <= 110; id++)
         {
-           stock.sellProduct(i, random.nextInt(1001)); 
+            product = stock.findProduct(id);
+            
+            if(product == null)
+            {
+                System.out.println("Product " + id + " Not found");
+            }
+            else
+            {
+               quantity = generator.nextInt(20);
+               stock.sellProduct(id, quantity);
+            }
         }
-    }    
+        
+    }       
 }
