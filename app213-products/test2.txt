@@ -1,0 +1,91 @@
+StockList appleStockList = new StockList();
+StockDemo appleStockDemo = new StockDemo();
+
+ Maryam's Stock List
+ ====================
+
+ ID 101: iPhone 12 stock level: 0
+ ID 102: iPhone 11 stock level: 0
+ ID 103: AirPods (2nd Generation) stock level: 0
+ ID 104: AirPods Pro stock level: 0
+ ID 105: iPad Pro stock level: 0
+ ID 106: iPad Air stock level: 0
+ ID 107: iPad Mini stock level: 0
+ ID 108: MacBook Pro stock level: 0
+ ID 109: MacBook Air stock level: 0
+ ID 110: Apple Pencil (1st Gen) stock level: 0
+
+NOT FOUND
+NOT FOUND
+NOT FOUND
+NOT FOUND
+NOT FOUND
+NOT FOUND
+NOT FOUND
+NOT FOUND
+NOT FOUND
+NOT FOUND
+
+ Maryam's Stock List
+ ====================
+
+ ID 101: iPhone 12 stock level: 5
+ ID 102: iPhone 11 stock level: 11
+ ID 103: AirPods (2nd Generation) stock level: 13
+ ID 104: AirPods Pro stock level: 14
+ ID 105: iPad Pro stock level: 15
+ ID 106: iPad Air stock level: 9
+ ID 107: iPad Mini stock level: 3
+ ID 108: MacBook Pro stock level: 7
+ ID 109: MacBook Air stock level: 10
+ ID 110: Apple Pencil (1st Gen) stock level: 12
+
+Selling Quanitities of Stock
+
+Selling 4 101
+Selling Quanitities of Stock
+
+Selling 2 102
+Selling Quanitities of Stock
+
+Selling 10 103
+Selling Quanitities of Stock
+
+All stock is sold!!
+Selling 14 104
+Selling Quanitities of Stock
+
+Selling 13 105
+Selling Quanitities of Stock
+
+All stock is sold!!
+Selling 9 106
+Selling Quanitities of Stock
+
+All stock is sold!!
+Selling 3 107
+Selling Quanitities of Stock
+
+Selling 0 108
+Selling Quanitities of Stock
+
+All stock is sold!!
+Selling 10 109
+Selling Quanitities of Stock
+
+Selling 2 110
+
+ Maryam's Stock List
+ ====================
+
+ ID 101: iPhone 12 stock level: 1
+ ID 102: iPhone 11 stock level: 9
+ ID 103: AirPods (2nd Generation) stock level: 3
+ ID 104: AirPods Pro stock level: 0
+ ID 105: iPad Pro stock level: 2
+ ID 106: iPad Air stock level: 0
+ ID 107: iPad Mini stock level: 0
+ ID 108: MacBook Pro stock level: 7
+ ID 109: MacBook Air stock level: 0
+ ID 110: Apple Pencil (1st Gen) stock level: 10
+
