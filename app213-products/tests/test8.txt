@@ -1,0 +1,18 @@
+StockList appleProducts = new StockList();
+Product iphone13 = new Product(101, "iPhone 13");
+Product iphone14 = new Product(102, "iPhone 14");
+Product iphone15 = new Product(103, "iPhone 15");
+Product iphone16 = new Product(104, "iPhone 16");
+appleProducts.add(iphone13);
+appleProducts.add(iphone14);
+appleProducts.add(iphone15);
+appleProducts.add(iphone16);
+appleProducts.searchProduct("iPhone 14");
+Not Found
+The search returned 0 query
+ ID 102: iPhone 14 stock level: 0
+The search returned 1 query
+Not Found
+The search returned 1 query
+Not Found
+The search returned 1 query
