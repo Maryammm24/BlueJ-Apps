@@ -115,10 +115,25 @@ public class StockList
         }
     }    
     
-    public void searchProduct(String phrase)
+    /** Search for Product by a Phrase
+     * 
+     */
+    public void searchProduct (String phrase)
     {
-        if(phrase.contains("Samsung"))
+        int count = 0;
+
+        for(Product product : stock)
         {
+            if(product.getName().contains(phrase))
+            {
+                System.out.println(product);
+                count += 1;
+            }
+            else
+            {
+                System.out.println("Not Found");
+            }
+            System.out.println("The search returned " + count + " query");
         }
     }
     
