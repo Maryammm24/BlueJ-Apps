@@ -77,13 +77,13 @@ public class StockApp
             String phrase = reader.getString("Please enter the name of the product >");
             stock.findProduct(phrase);
         }
-        else if (choice.equals("low-stock"))
-        {
-            runReStock();
-        }
-        else if (choice.equals("re-stock"))
+        else if (choice.equals("low stock"))
         {
             runLowStock();
+        }
+        else if (choice.equals("re stock"))
+        {
+            runReStock();
         }
         else if (choice.equals("demo"))
         {
@@ -183,7 +183,7 @@ public class StockApp
         {
             stock.buyProduct(id, amount);
             System.out.println("You have purchased product with Id " 
-            + id + "" + amount + "times");
+            + id + " " + amount + " times");
         }
         else
         {
@@ -199,11 +199,11 @@ public class StockApp
         System.out.println();
         System.out.println("    Add:        Add a new product");
         System.out.println("    Remove:     Remove an old product");
-        //System.out.println("    Buy:        Buy an existing a product by ID"); 
-        //System.out.println("    Sell:       Sell an existing product by ID"); 
-        //System.out.println("    Low Stock:  Print all products have low stock"); 
-        //System.out.println("    Re-Stock:       Restock the selected productr"); 
-        //System.out.println("    Search:     Search a product with the product ID"); 
+        System.out.println("    Buy:        Buy an existing a product by ID"); 
+        System.out.println("    Sell:       Sell an existing product by ID"); 
+        System.out.println("    Low Stock:  Print all products have low stock"); 
+        System.out.println("    Re-Stock:   Restock the selected productr"); 
+        System.out.println("    Search:     Search a product with the product ID"); 
         System.out.println("    Print:      Print all products");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
