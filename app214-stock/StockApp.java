@@ -45,6 +45,9 @@ public class StockApp
         }
     }
     
+    /**
+     * To allow the user input.
+     */
     private boolean executeChoice(String choice)
     {
         if(choice.equals("quit"))
@@ -96,6 +99,9 @@ public class StockApp
         return false;
     }
     
+    /**
+     * To add the product using the ID and the name.
+     */
     private void addProduct()
     {
         int id = reader.getInt("Please enter the ID: ");
@@ -114,12 +120,18 @@ public class StockApp
         }
     }
     
+    /**
+     * To remove the product by the product ID.
+     */
     private void removeProduct()
     {
         int id = reader.getInt("Enter ID of product >");
         stock.remove(id);
     }
     
+    /**
+     * To sell the product by the product ID.
+     */
     private void sellProduct()
     {
        int id = reader.getInt("Enter the product ID > "); 
@@ -135,6 +147,10 @@ public class StockApp
        }
     }
     
+    /**
+     * To allow the user to check the low stock products and ask if they 
+     * need to be restocked.
+     */
     private void runLowStock()
     {
         int amount = reader.getInt("Enter the max quantity to show, between 1-5.");
@@ -161,6 +177,9 @@ public class StockApp
         }
     }
     
+    /**
+     * To restock the products when the quantity is under 5.
+     */
     private void runReStock()
     {
         int amount = reader.getInt("Enter the max quantity, between 1-5.");
@@ -175,6 +194,10 @@ public class StockApp
         }
     }
     
+    /**
+     * To allow the user to buy products by the product ID and the amount 
+     * they want to buy. 
+     */
     private void buyProduct()
     {
         int id = reader.getInt("Enter ID of product >");

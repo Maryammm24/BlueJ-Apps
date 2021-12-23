@@ -36,6 +36,9 @@ public class StockList
         }
     }
     
+    /**
+     * A method to remove a product from the list.
+     */
     public void remove(int productID)
     {
         Product product = findProduct(productID);
@@ -99,6 +102,9 @@ public class StockList
         return null;
     }
     
+    /**
+     * To find the product from the list and print it. 
+     */
     public void findProduct(String phrase)
     {
         for (Product product : stock)
@@ -109,7 +115,10 @@ public class StockList
             }
         }
     }
-    
+
+    /**
+     * To find any products with low stock and print to the user.
+     */
     public void lowStock(int amount)
     {
         for (Product product : stock)
@@ -121,6 +130,9 @@ public class StockList
         }
     }
     
+    /**
+     * To restock the low stock products when the quantity is under 10.
+     */
     public void reStock(int amount, int quantity)
     {
         for (Product product : stock)
