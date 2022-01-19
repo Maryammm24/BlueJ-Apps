@@ -42,7 +42,7 @@ public class Course
         
         System.out.println(" Course Code: " + code + ": " + title);
         System.out.println();
-        module.print();
+        //module.print();
     }
     
     /**

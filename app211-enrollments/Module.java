@@ -1,4 +1,3 @@
-
 /**
  * This class models a BNU module which forms part of a course.
  *
